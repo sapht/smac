@@ -1,0 +1,4 @@
+#!/bin/bash
+osascript -e 'set mypath to (get selection of application "Finder")
+set dinmamma to POSIX path of (first item of mypath as string)
+do shell script "open -a /Applications/MacVim.app " & (quoted form of dinmamma)'

@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Additional Settings</key>
+	<dict>
+		<key>Multistrip</key>
+		<true/>
+	</dict>
+	<key>Children</key>
+	<array>
+		<dict>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>Children</key>
+					<array>
+						<dict>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Children</key>
+									<array>
+										<dict>
+											<key>Children</key>
+											<array>
+												<dict>
+													<key>Abbreviation Search Enabled</key>
+													<false/>
+													<key>Abbreviation Search Recursion</key>
+													<integer>3</integer>
+													<key>Path</key>
+													<string>/System/Library/CoreServices</string>
+													<key>Type</key>
+													<string>Folder Content</string>
+												</dict>
+											</array>
+											<key>Custom Icon Identifier</key>
+											<string>file://localhost/System/Library/CoreServices/</string>
+											<key>Launch Group</key>
+											<false/>
+											<key>Title</key>
+											<string>CoreServices</string>
+											<key>Type</key>
+											<string>Container</string>
+										</dict>
+										<dict>
+											<key>Content</key>
+											<string>Applications</string>
+											<key>Type</key>
+											<string>Smart Item: List</string>
+										</dict>
+									</array>
+									<key>Launch Group</key>
+									<false/>
+									<key>Title</key>
+									<string>All applications</string>
+									<key>Type</key>
+									<string>Container</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>Separator</string>
+								</dict>
+								<dict>
+									<key>Additional Settings</key>
+									<dict>
+										<key>Paths</key>
+										<dict>
+											<key>/Applications</key>
+											<integer>0</integer>
+										</dict>
+									</dict>
+									<key>Content</key>
+									<string>Applications</string>
+									<key>Type</key>
+									<string>Smart Item: List</string>
+								</dict>
+							</array>
+							<key>Custom Icon Identifier</key>
+							<string>app_aapp</string>
+							<key>Hot Corner</key>
+							<dict>
+								<key>Button</key>
+								<integer>1</integer>
+								<key>Corner</key>
+								<integer>3</integer>
+								<key>Modifiers</key>
+								<integer>0</integer>
+							</dict>
+							<key>Launch Group</key>
+							<false/>
+							<key>Title</key>
+							<string>Application list</string>
+							<key>Type</key>
+							<string>Container</string>
+						</dict>
+						<dict>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Additional Settings</key>
+									<dict>
+										<key>Text</key>
+										<string>tell application "Terminal"
+	activate
+	do script "/Applications/Interface\\ Scripts/managekaba.sh umount"
+end tell</string>
+									</dict>
+									<key>Task</key>
+									<string>AppleScript</string>
+									<key>Title</key>
+									<string>Unmount Kaba</string>
+									<key>Type</key>
+									<string>Smart Item: Monolith</string>
+								</dict>
+								<dict>
+									<key>Additional Settings</key>
+									<dict>
+										<key>Text</key>
+										<string>tell application "Finder"
+	activate
+	open the folder "Applications" of the startup disk
+	set the current view of the front Finder window to list view
+	--Minimize the window to the Dock. 
+end tell
+</string>
+									</dict>
+									<key>Task</key>
+									<string>AppleScript</string>
+									<key>Title</key>
+									<string>Finder-open music-workspace</string>
+									<key>Type</key>
+									<string>Smart Item: Monolith</string>
+								</dict>
+								<dict>
+									<key>Additional Settings</key>
+									<dict>
+										<key>Text</key>
+										<string>tell application "Terminal"
+	activate
+	do script "/Applications/Interface\\ Scripts/managekaba.sh mount"
+end tell</string>
+									</dict>
+									<key>Task</key>
+									<string>AppleScript</string>
+									<key>Title</key>
+									<string>Mount &amp; Keepalive Kaba</string>
+									<key>Type</key>
+									<string>Smart Item: Monolith</string>
+								</dict>
+							</array>
+							<key>Custom Icon Identifier</key>
+							<string>system_kill</string>
+							<key>Launch Group</key>
+							<false/>
+							<key>Title</key>
+							<string>Scripts</string>
+							<key>Type</key>
+							<string>Container</string>
+						</dict>
+						<dict>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Content</key>
+									<string>Scripts Menu</string>
+									<key>Type</key>
+									<string>Smart Item: List</string>
+								</dict>
+							</array>
+							<key>Custom Icon Identifier</key>
+							<string>menu_applescript</string>
+							<key>Launch Group</key>
+							<false/>
+							<key>Title</key>
+							<string>Scripts Menu</string>
+							<key>Type</key>
+							<string>Container</string>
+						</dict>
+						<dict>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Additional Settings</key>
+									<dict>
+										<key>Sort Alphabetically</key>
+										<true/>
+									</dict>
+									<key>Content</key>
+									<string>System preferences</string>
+									<key>Type</key>
+									<string>Smart Item: List</string>
+								</dict>
+							</array>
+							<key>Custom Icon Identifier</key>
+							<string>menu_preferences</string>
+							<key>Hot Key</key>
+							<dict>
+								<key>Code</key>
+								<integer>35</integer>
+								<key>Key</key>
+								<string>^⌘P</string>
+								<key>Modifiers</key>
+								<integer>1310985</integer>
+								<key>Pop Up</key>
+								<string>yes</string>
+							</dict>
+							<key>Launch Group</key>
+							<false/>
+							<key>Title</key>
+							<string>System preferences</string>
+							<key>Type</key>
+							<string>Container</string>
+						</dict>
+						<dict>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Additional Settings</key>
+									<dict>
+										<key>Eject Local Volumes</key>
+										<true/>
+										<key>Omit Local Volumes</key>
+										<false/>
+										<key>Omit Network Volumes</key>
+										<false/>
+										<key>Omit Removable Volumes</key>
+										<false/>
+									</dict>
+									<key>Content</key>
+									<string>Volumes</string>
+									<key>Type</key>
+									<string>Smart Item: List</string>
+								</dict>
+							</array>
+							<key>Custom Icon Identifier</key>
+							<string>aa_driveremovable</string>
+							<key>Launch Group</key>
+							<false/>
+							<key>Title</key>
+							<string>Volumes</string>
+							<key>Type</key>
+							<string>Container</string>
+						</dict>
+						<dict>
+							<key>Type</key>
+							<string>Separator</string>
+						</dict>
+						<dict>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Task</key>
+									<string>AppleScript</string>
+									<key>Title</key>
+									<string>Dummy AppleScript</string>
+									<key>Type</key>
+									<string>Smart Item: Monolith</string>
+								</dict>
+								<dict>
+									<key>Task</key>
+									<string>AppleScript</string>
+									<key>Title</key>
+									<string>Dummy AppleScript</string>
+									<key>Type</key>
+									<string>Smart Item: Monolith</string>
+								</dict>
+								<dict>
+									<key>Task</key>
+									<string>iTunes: Start / Stop</string>
+									<key>Title</key>
+									<string>iTunes: Start/Stop</string>
+									<key>Type</key>
+									<string>Smart Item: Monolith</string>
+								</dict>
+								<dict>
+									<key>Children</key>
+									<array>
+										<dict>
+											<key>Additional Settings</key>
+											<dict>
+												<key>Text</key>
+												<string>tell application "Finder"
+		(* activate *)
+		set this_folder to (the target of the front window) as alias
+		set {x1, y1} to position of front window
+		make new Finder window to this_folder
+		set position of front window to {(x1 + 10), (y1 + 20)} --This offsets the new window more than the average Finder tiling does
+	end tell
+</string>
+											</dict>
+											<key>Hot Key</key>
+											<dict>
+												<key>Code</key>
+												<integer>8</integer>
+												<key>Key</key>
+												<string>⌥⌘C</string>
+												<key>Modifiers</key>
+												<integer>1573160</integer>
+											</dict>
+											<key>Task</key>
+											<string>AppleScript</string>
+											<key>Title</key>
+											<string>Clone Window</string>
+											<key>Type</key>
+											<string>Smart Item: Monolith</string>
+										</dict>
+									</array>
+									<key>Launch Group</key>
+									<false/>
+									<key>Title</key>
+									<string>Finder</string>
+									<key>Type</key>
+									<string>Container</string>
+								</dict>
+								<dict>
+									<key>Children</key>
+									<array>
+										<dict>
+											<key>Task</key>
+											<string>iTunes: Start / Stop</string>
+											<key>Title</key>
+											<string>iTunes: Start/Stop</string>
+											<key>Type</key>
+											<string>Smart Item: Monolith</string>
+										</dict>
+										<dict>
+											<key>Additional Settings</key>
+											<dict>
+												<key>Text</key>
+												<string>set myVolume to get volume settings
+if output muted of myVolume is false then
+        set volume with output muted
+else
+        set volume without output muted
+end if</string>
+											</dict>
+											<key>Hot Key</key>
+											<dict>
+												<key>Code</key>
+												<integer>115</integer>
+												<key>Key</key>
+												<string>⌘↖</string>
+												<key>Modifiers</key>
+												<integer>9437448</integer>
+											</dict>
+											<key>Task</key>
+											<string>AppleScript</string>
+											<key>Title</key>
+											<string>Mute/unmute</string>
+											<key>Type</key>
+											<string>Smart Item: Monolith</string>
+										</dict>
+										<dict>
+											<key>Additional Settings</key>
+											<dict>
+												<key>Text</key>
+												<string>--Get the current output volume (on a scale from 1 to 100) and convert it to a scale from 1 to 16 as seen when using the volume keys
+set currentVolume to output volume of (get volume settings)
+set scaledVolume to round (currentVolume / (100 / 16))
+
+set soundInterval to 1
+--set scaledVolume to scaledVolume + soundInterval
+--if (scaledVolume &gt; 16) then
+--	set scaledVolume to 16
+--end if
+
+--OR use this code to decrease the output volume by 1
+set scaledVolume to scaledVolume - 1
+if (scaledVolume &lt; 0) then
+	set scaledVolume to 1 / 16
+end if
+
+--After using one of the above, the volume needs to be set to the new level (before which we must convert it back to the 1..100 scale)
+set newVolume to round (scaledVolume / 16 * 100)
+set volume output volume newVolume</string>
+											</dict>
+											<key>Hot Key</key>
+											<dict>
+												<key>Code</key>
+												<integer>121</integer>
+												<key>Key</key>
+												<string>⌘⇟</string>
+												<key>Modifiers</key>
+												<integer>9437448</integer>
+											</dict>
+											<key>Task</key>
+											<string>AppleScript</string>
+											<key>Title</key>
+											<string>Fine decrease system volume</string>
+											<key>Type</key>
+											<string>Smart Item: Monolith</string>
+										</dict>
+										<dict>
+											<key>Additional Settings</key>
+											<dict>
+												<key>Text</key>
+												<string>--Get the current output volume (on a scale from 1 to 100) and convert it to a scale from 1 to 16 as seen when using the volume keys
+set currentVolume to output volume of (get volume settings)
+set scaledVolume to round (currentVolume / (100 / 8))
+
+set soundInterval to 1
+--set scaledVolume to scaledVolume + soundInterval
+--if (scaledVolume &gt; 4) then
+--	set scaledVolume to 6
+--end if
+
+--OR use this code to decrease the output volume by 1
+set scaledVolume to scaledVolume - 1
+if (scaledVolume &lt; 0) then
+	set scaledVolume to 1 / 8
+end if
+
+--After using one of the above, the volume needs to be set to the new level (before which we must convert it back to the 1..100 scale)
+set newVolume to round (scaledVolume / 8 * 100)
+set volume output volume newVolume
+beep</string>
+											</dict>
+											<key>Hot Key</key>
+											<dict>
+												<key>Code</key>
+												<integer>121</integer>
+												<key>Key</key>
+												<string>⇧⌘⇟</string>
+												<key>Modifiers</key>
+												<integer>9568522</integer>
+											</dict>
+											<key>Task</key>
+											<string>AppleScript</string>
+											<key>Title</key>
+											<string>Coarse decrease system volume</string>
+											<key>Type</key>
+											<string>Smart Item: Monolith</string>
+										</dict>
+										<dict>
+											<key>Additional Settings</key>
+											<dict>
+												<key>Text</key>
+												<string>--Get the current output volume (on a scale from 1 to 100) and convert it to a scale from 1 to 16 as seen when using the volume keys
+set currentVolume to output volume of (get volume settings)
+set scaledVolume to round (currentVolume / (100 / 16))
+
+--Use this code to increase the volume by a certain interval
+set soundInterval to 1
+set scaledVolume to scaledVolume + soundInterval
+if (scaledVolume &gt; 16) then
+	set scaledVolume to 16
+end if
+
+--OR use this code to decrease the output volume by 1
+--set scaledVolume to scaledVolume - 1
+--if (scaledVolume &lt; 0) then
+--	set scaledVolume to 0
+--end if
+
+--After using one of the above, the volume needs to be set to the new level (before which we must convert it back to the 1..100 scale)
+set newVolume to round (scaledVolume / 16 * 100)
+set volume output volume newVolume</string>
+											</dict>
+											<key>Hot Key</key>
+											<dict>
+												<key>Code</key>
+												<integer>116</integer>
+												<key>Key</key>
+												<string>⌘⇞</string>
+												<key>Modifiers</key>
+												<integer>9437448</integer>
+											</dict>
+											<key>Task</key>
+											<string>AppleScript</string>
+											<key>Title</key>
+											<string>Fine increase system volume</string>
+											<key>Type</key>
+											<string>Smart Item: Monolith</string>
+										</dict>
+										<dict>
+											<key>Additional Settings</key>
+											<dict>
+												<key>Text</key>
+												<string>--Get the current output volume (on a scale from 1 to 100) and convert it to a scale from 1 to 16 as seen when using the volume keys
+set currentVolume to output volume of (get volume settings)
+set scaledVolume to round (currentVolume / (100 / 8))
+
+--Use this code to increase the volume by a certain interval
+set soundInterval to 1
+set scaledVolume to scaledVolume + soundInterval
+if (scaledVolume &gt; 8) then
+	set scaledVolume to 8
+end if
+
+--OR use this code to decrease the output volume by 1
+--set scaledVolume to scaledVolume - 1
+--if (scaledVolume &lt; 0) then
+--	set scaledVolume to 0
+--end if
+
+--After using one of the above, the volume needs to be set to the new level (before which we must convert it back to the 1..100 scale)
+set newVolume to round (scaledVolume / 8 * 100)
+set volume output volume newVolume
+beep</string>
+											</dict>
+											<key>Hot Key</key>
+											<dict>
+												<key>Code</key>
+												<integer>116</integer>
+												<key>Key</key>
+												<string>⇧⌘⇞</string>
+												<key>Modifiers</key>
+												<integer>9568522</integer>
+											</dict>
+											<key>Task</key>
+											<string>AppleScript</string>
+											<key>Title</key>
+											<string>Coarse increase system volume</string>
+											<key>Type</key>
+											<string>Smart Item: Monolith</string>
+										</dict>
+									</array>
+									<key>Launch Group</key>
+									<false/>
+									<key>Title</key>
+									<string>Syswide</string>
+									<key>Type</key>
+									<string>Container</string>
+								</dict>
+							</array>
+							<key>Custom Icon Identifier</key>
+							<string>system_logout</string>
+							<key>Launch Group</key>
+							<false/>
+							<key>Title</key>
+							<string>Appstrapper keys</string>
+							<key>Type</key>
+							<string>Container</string>
+						</dict>
+						<dict>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Path</key>
+									<string>/Applications/Utilities/XQuartz.app</string>
+									<key>Title</key>
+									<string>XQuartz</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Additional Settings</key>
+									<dict>
+										<key>Text</key>
+										<string>tell application "XQuartz"
+	activate
+end tell</string>
+									</dict>
+									<key>Task</key>
+									<string>AppleScript</string>
+									<key>Title</key>
+									<string>AppleScript</string>
+									<key>Type</key>
+									<string>Smart Item: Monolith</string>
+								</dict>
+								<dict>
+									<key>Task</key>
+									<string>AppleScript</string>
+									<key>Title</key>
+									<string>AppleScript</string>
+									<key>Type</key>
+									<string>Smart Item: Monolith</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft, hl2_osx</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>18</integer>
+										<key>Key</key>
+										<string>^1</string>
+										<key>Modifiers</key>
+										<integer>262401</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/Utilities/Terminal.app</string>
+									<key>Title</key>
+									<string>Terminal</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Path</key>
+									<string>/Applications/Utilities/Terminal.app</string>
+									<key>Title</key>
+									<string>Terminal</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Code</key>
+										<integer>18</integer>
+										<key>Key</key>
+										<string>^⌘1</string>
+										<key>Modifiers</key>
+										<integer>1310985</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/1Password.app</string>
+									<key>Title</key>
+									<string>1</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>Separator</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft, hl2_osx</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>19</integer>
+										<key>Key</key>
+										<string>^2</string>
+										<key>Modifiers</key>
+										<integer>262401</integer>
+									</dict>
+									<key>Path</key>
+									<string>/System/Library/CoreServices/Finder.app</string>
+									<key>Title</key>
+									<string>Finder</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft, hl2_osx</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>20</integer>
+										<key>Key</key>
+										<string>^3</string>
+										<key>Modifiers</key>
+										<integer>262401</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/Google Chrome.app</string>
+									<key>Title</key>
+									<string>Google Chrome</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft, hl2_osx</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>21</integer>
+										<key>Key</key>
+										<string>^4</string>
+										<key>Modifiers</key>
+										<integer>262401</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/MacVim.app</string>
+									<key>Title</key>
+									<string>MacVim</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Code</key>
+										<integer>21</integer>
+										<key>Key</key>
+										<string>^⌘4</string>
+										<key>Modifiers</key>
+										<integer>1319184</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/Mail.app</string>
+									<key>Title</key>
+									<string>Mail</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft, hl2_osx</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>23</integer>
+										<key>Key</key>
+										<string>^5</string>
+										<key>Modifiers</key>
+										<integer>262401</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/Firefox.app</string>
+									<key>Title</key>
+									<string>Safari</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Assigned Abbreviation</key>
+									<string>cal</string>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft, hl2_osx</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>22</integer>
+										<key>Key</key>
+										<string>^6</string>
+										<key>Modifiers</key>
+										<integer>262401</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/iCal.app</string>
+									<key>Title</key>
+									<string>iCal</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft, hl2_osx</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>26</integer>
+										<key>Key</key>
+										<string>^7</string>
+										<key>Modifiers</key>
+										<integer>262401</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/Spotify.app</string>
+									<key>Title</key>
+									<string>Spotify</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft, hl2_osx</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>25</integer>
+										<key>Key</key>
+										<string>^9</string>
+										<key>Modifiers</key>
+										<integer>262401</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/Skype.app</string>
+									<key>Title</key>
+									<string>Skype</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>Separator</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Applications</key>
+										<dict>
+											<key>Names</key>
+											<string>starcraft</string>
+											<key>Rule</key>
+											<string>not</string>
+										</dict>
+										<key>Code</key>
+										<integer>50</integer>
+										<key>Key</key>
+										<string>^⌘`</string>
+										<key>Modifiers</key>
+										<integer>1310985</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/Butler.app</string>
+									<key>Title</key>
+									<string>Butler</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+								<dict>
+									<key>Hot Key</key>
+									<dict>
+										<key>Code</key>
+										<integer>10</integer>
+										<key>Key</key>
+										<string>^⌘§</string>
+										<key>Modifiers</key>
+										<integer>1310985</integer>
+									</dict>
+									<key>Path</key>
+									<string>/Applications/Butler.app</string>
+									<key>Title</key>
+									<string>Butler</string>
+									<key>Type</key>
+									<string>File/URL</string>
+								</dict>
+							</array>
+							<key>Custom Icon Identifier</key>
+							<string>menu_control</string>
+							<key>Launch Group</key>
+							<false/>
+							<key>Title</key>
+							<string>Launcher keys</string>
+							<key>Type</key>
+							<string>Container</string>
+						</dict>
+						<dict>
+							<key>Type</key>
+							<string>Separator</string>
+						</dict>
+						<dict>
+							<key>Path</key>
+							<string>/Applications/Butler.app</string>
+							<key>Title</key>
+							<string>Butler.app</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Task</key>
+							<string>Update</string>
+							<key>Title</key>
+							<string>Update Butler</string>
+							<key>Type</key>
+							<string>Control</string>
+						</dict>
+					</array>
+					<key>Custom Icon Identifier</key>
+					<string>menu_butler</string>
+					<key>Launch Group</key>
+					<false/>
+					<key>Title</key>
+					<string>Butler content</string>
+					<key>Type</key>
+					<string>Container</string>
+				</dict>
+				<dict>
+					<key>Children</key>
+					<array/>
+					<key>Custom Icon Identifier</key>
+					<string>menu_invisible</string>
+					<key>Launch Group</key>
+					<false/>
+					<key>Title</key>
+					<string>Lists</string>
+					<key>Type</key>
+					<string>Container</string>
+				</dict>
+				<dict>
+					<key>Additional Settings</key>
+					<dict>
+						<key>Category Matches Counts</key>
+						<dict>
+							<key>Applications</key>
+							<integer>5</integer>
+							<key>Preference panes</key>
+							<integer>5</integer>
+						</dict>
+						<key>Hidden Categories</key>
+						<array>
+							<string>Addresses</string>
+							<string>E-mail addresses</string>
+							<string>Movies</string>
+							<string>FTP sites</string>
+							<string>Music</string>
+							<string>Other</string>
+							<string>Phone numbers</string>
+							<string>Pictures</string>
+							<string>Search engines</string>
+							<string>Web sites</string>
+							<string>URL</string>
+							<string>Containers</string>
+							<string>Best match</string>
+							<string>Folders</string>
+						</array>
+						<key>Sort By Category</key>
+						<false/>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Code</key>
+						<integer>49</integer>
+						<key>Key</key>
+						<string>⌘Space</string>
+						<key>Modifiers</key>
+						<integer>1048840</integer>
+					</dict>
+					<key>Task</key>
+					<string>Enter abbreviation...</string>
+					<key>Title</key>
+					<string>Enter abbreviation…</string>
+					<key>Type</key>
+					<string>Control</string>
+				</dict>
+				<dict>
+					<key>Additional Settings</key>
+					<dict>
+						<key>Text</key>
+						<string>do shell script "/Applications/Utilities/Expose.app/Contents/MacOS/Expose 2"</string>
+					</dict>
+					<key>Task</key>
+					<string>AppleScript</string>
+					<key>Title</key>
+					<string>AppleScript</string>
+					<key>Type</key>
+					<string>Smart Item: Monolith</string>
+				</dict>
+				<dict>
+					<key>Additional Settings</key>
+					<dict>
+						<key>Text</key>
+						<string>do shell script "/Applications/Utilities/Expose.app/Contents/MacOS/Expose 2"</string>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Code</key>
+						<integer>105</integer>
+						<key>Key</key>
+						<string>F13</string>
+						<key>Modifiers</key>
+						<integer>8388864</integer>
+					</dict>
+					<key>Task</key>
+					<string>AppleScript</string>
+					<key>Title</key>
+					<string>AppleScript</string>
+					<key>Type</key>
+					<string>Smart Item: Monolith</string>
+				</dict>
+				<dict>
+					<key>Additional Settings</key>
+					<dict>
+						<key>Text</key>
+						<string>do shell script "/Applications/Utilities/Expose.app/Contents/MacOS/Expose 2"</string>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Code</key>
+						<integer>122</integer>
+						<key>Key</key>
+						<string>⌘F1</string>
+						<key>Modifiers</key>
+						<integer>9437448</integer>
+					</dict>
+					<key>Task</key>
+					<string>AppleScript</string>
+					<key>Title</key>
+					<string>AppleScript</string>
+					<key>Type</key>
+					<string>Smart Item: Monolith</string>
+				</dict>
+				<dict>
+					<key>Additional Settings</key>
+					<dict>
+						<key>Hidden Categories</key>
+						<array>
+							<string>Addresses</string>
+							<string>E-mail addresses</string>
+							<string>Movies</string>
+							<string>FTP sites</string>
+							<string>Music</string>
+							<string>Other</string>
+							<string>Phone numbers</string>
+							<string>Pictures</string>
+							<string>Search engines</string>
+							<string>Web sites</string>
+							<string>URL</string>
+							<string>Containers</string>
+							<string>Best match</string>
+							<string>Folders</string>
+						</array>
+						<key>Sort By Category</key>
+						<true/>
+					</dict>
+					<key>Task</key>
+					<string>Enter abbreviation...</string>
+					<key>Title</key>
+					<string>Enter abbreviation…</string>
+					<key>Type</key>
+					<string>Control</string>
+				</dict>
+				<dict>
+					<key>Additional Settings</key>
+					<dict>
+						<key>On-the-Fly</key>
+						<true/>
+					</dict>
+					<key>Children</key>
+					<array>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>soft</string>
+							<key>Path</key>
+							<string>/System/Library/PreferencePanes/SoftwareUpdate.prefPane</string>
+							<key>Title</key>
+							<string>Software Update</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>appear</string>
+							<key>Path</key>
+							<string>/System/Library/PreferencePanes/Appearance.prefPane</string>
+							<key>Title</key>
+							<string>Appearance</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>langua</string>
+							<key>Path</key>
+							<string>/System/Library/PreferencePanes/Localization.prefPane</string>
+							<key>Title</key>
+							<string>Language &amp; Text</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>expos</string>
+							<key>Path</key>
+							<string>/System/Library/PreferencePanes/Expose.prefPane</string>
+							<key>Title</key>
+							<string>Exposé &amp; Spaces</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>network</string>
+							<key>Path</key>
+							<string>/System/Library/PreferencePanes/Network.prefPane</string>
+							<key>Title</key>
+							<string>Network</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>devon</string>
+							<key>Path</key>
+							<string>/Applications/DEVONthink Pro.app</string>
+							<key>Title</key>
+							<string>DEVONthink Pro Office</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>ca</string>
+							<key>Path</key>
+							<string>/Applications/Camino.app</string>
+							<key>Title</key>
+							<string>Camino</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>aq</string>
+							<key>Path</key>
+							<string>/Applications/Aquamacs.app</string>
+							<key>Title</key>
+							<string>Aquamacs</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>star</string>
+							<key>Path</key>
+							<string>/Applications/StarCraft II/StarCraft II.app</string>
+							<key>Title</key>
+							<string>StarCraft II (/Applications/StarCraft II)</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>displ</string>
+							<key>Path</key>
+							<string>/System/Library/PreferencePanes/Displays.prefPane</string>
+							<key>Title</key>
+							<string>Displays</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>sbover</string>
+							<key>Path</key>
+							<string>/Library/PreferencePanes/USB Overdrive.prefPane</string>
+							<key>Title</key>
+							<string>USB Overdrive</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>pref</string>
+							<key>Path</key>
+							<string>/Applications/System Preferences.app</string>
+							<key>Title</key>
+							<string>System Preferences</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>sound</string>
+							<key>Path</key>
+							<string>/System/Library/PreferencePanes/Sound.prefPane</string>
+							<key>Title</key>
+							<string>Sound</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>logic</string>
+							<key>Path</key>
+							<string>/Applications/Logic Pro.app</string>
+							<key>Title</key>
+							<string>Logic Pro</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Path</key>
+							<string>/Applications/StarCraft II/StarCraft II Editor.app</string>
+							<key>Title</key>
+							<string>StarCraft II Editor</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>sc</string>
+							<key>Path</key>
+							<string>/Applications/StarCraft II/StarCraft II.app</string>
+							<key>Title</key>
+							<string>StarCraft II</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>assis</string>
+							<key>Path</key>
+							<string>/Developer/Applications/Utilities/Accessibility Tools/Accessibility Inspector.app</string>
+							<key>Title</key>
+							<string>Accessibility Inspector</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>ch</string>
+							<key>Path</key>
+							<string>/Applications/ChromeWithSpeedTracer.app</string>
+							<key>Title</key>
+							<string>ChromeWithSpeedTracer</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>with</string>
+							<key>Path</key>
+							<string>~/Library/PreferencePanes/Witch.prefPane</string>
+							<key>Title</key>
+							<string>Witch</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>saf</string>
+							<key>Path</key>
+							<string>/Applications/Safari.app</string>
+							<key>Title</key>
+							<string>Safari</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>h</string>
+							<key>Path</key>
+							<string>/Developer/Applications/Audio/HALLab.app</string>
+							<key>Title</key>
+							<string>HALLab</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Path</key>
+							<string>~/Applications/Half-Life 2 Episode One.app</string>
+							<key>Title</key>
+							<string>Half-Life 2 Episode One</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>ama</string>
+							<key>Path</key>
+							<string>/Applications/Amadeus Pro.app</string>
+							<key>Title</key>
+							<string>Amadeus Pro</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>half</string>
+							<key>Path</key>
+							<string>~/Applications/Half-Life 2 Episode Two.app</string>
+							<key>Title</key>
+							<string>Half-Life 2 Episode Two</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+						<dict>
+							<key>Assigned Abbreviation</key>
+							<string>1</string>
+							<key>Path</key>
+							<string>/Applications/1Password.app</string>
+							<key>Title</key>
+							<string>1Password</string>
+							<key>Type</key>
+							<string>File/URL</string>
+						</dict>
+					</array>
+					<key>Launch Group</key>
+					<false/>
+					<key>Title</key>
+					<string>On-the-fly abbreviations</string>
+					<key>Type</key>
+					<string>Container</string>
+				</dict>
+			</array>
+			<key>Launch Group</key>
+			<false/>
+			<key>Title</key>
+			<string>Hidden</string>
+			<key>Type</key>
+			<string>Top-Level Container: Hidden</string>
+		</dict>
+		<dict>
+			<key>Children</key>
+			<array/>
+			<key>Launch Group</key>
+			<false/>
+			<key>Title</key>
+			<string>Menu Bar (Left)</string>
+			<key>Type</key>
+			<string>Top-Level Container: Menu Bar</string>
+		</dict>
+		<dict>
+			<key>Children</key>
+			<array/>
+			<key>Launch Group</key>
+			<false/>
+			<key>Title</key>
+			<string>Menu Bar (Natural)</string>
+			<key>Type</key>
+			<string>Top-Level Container: Menu Bar</string>
+		</dict>
+		<dict>
+			<key>Children</key>
+			<array/>
+			<key>Launch Group</key>
+			<false/>
+			<key>Title</key>
+			<string>Menu Bar (Center)</string>
+			<key>Type</key>
+			<string>Top-Level Container: Menu Bar</string>
+		</dict>
+		<dict>
+			<key>Children</key>
+			<array/>
+			<key>Launch Group</key>
+			<false/>
+			<key>Title</key>
+			<string>Menu Bar (Right)</string>
+			<key>Type</key>
+			<string>Top-Level Container: Menu Bar</string>
+		</dict>
+		<dict>
+			<key>Children</key>
+			<array/>
+			<key>Launch Group</key>
+			<false/>
+			<key>Title</key>
+			<string>Docklet</string>
+			<key>Type</key>
+			<string>Top-Level Container: Docklet</string>
+		</dict>
+	</array>
+	<key>Launch Group</key>
+	<false/>
+	<key>PM Resource ID</key>
+	<dict>
+		<key>Root</key>
+		<true/>
+		<key>Type</key>
+		<string>Butler Configuration Items</string>
+		<key>Version</key>
+		<real>1</real>
+	</dict>
+	<key>Title</key>
+	<string></string>
+	<key>Type</key>
+	<string>Configuration</string>
+</dict>
+</plist>

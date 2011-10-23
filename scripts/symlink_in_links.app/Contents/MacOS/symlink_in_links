@@ -1,0 +1,5 @@
+#!/bin/bash
+osascript -e 'set mypath to (get selection of application "Finder")
+set dinmamma to POSIX path of (first item of mypath as string)
+do shell script "ln -s " & (quoted form of dinmamma) & " ~/Links/`basename " & (quoted form of dinmamma)& "`"'
+
